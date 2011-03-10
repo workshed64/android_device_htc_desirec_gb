@@ -13,7 +13,7 @@ $(call inherit-product, vendor/cyanogen/products/gsm.mk)
 PRODUCT_NAME := cyanogen_desirec
 PRODUCT_BRAND := verizon
 PRODUCT_DEVICE := desirec
-PRODUCT_MODEL := GSBv1.x-ERIS
+PRODUCT_MODEL := ERIS
 PRODUCT_MANUFACTURER := HTC
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=GRI40 BUILD_DISPLAY_ID=GRI40 BUILD_FINGERPRINT=google/passion/passion:2.3.3/GRI40/102588:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.3.3 GRI40 102588 release-keys"
 
@@ -30,14 +30,14 @@ WITH_WINDOWS_MEDIA := true
 #
 ifdef CYANOGEN_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=GSBv1.x-$(shell date +%m%d%Y)-CM7-NIGHTLY-Desirec
+        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-Desirec
 else
     ifdef CYANOGEN_RELEASE
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=GSBv1.x-CM7.0.0-RC2-Desirec
+            ro.modversion=CyanogenMod-7.0.0-RC2-Desirec
     else
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=GSBv1.x-CM7.0.0-RC2-KANG-Desirec
+            ro.modversion=CyanogenMod-7.0.0-RC2-KANG-Desirec
     endif
 endif
 
