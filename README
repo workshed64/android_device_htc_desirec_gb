@@ -15,7 +15,7 @@ So to clearify...
 Basic steps to build:
 
 1 - Get local copy of CM7 respository
-2 - Get copy of the device tree into device/htc/heroc
+2 - Get copy of the device tree into device/htc/desirec
 3 - Run get-rommanager in vendor/cyanogen directory
 4 - Get proprietary files into 'vendor/htc/desirec/proprietary'
         a) Put ROM (update.zip) in repo root and run 'unzip-files.sh' from the 'device/htc/desirec' directory
