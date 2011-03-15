@@ -12,9 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# We need a way to prevent the stuff Google Apps replaces from being included in the build.
-# This is a hacky way to do that.
-
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_PATH := $(my-dir)
