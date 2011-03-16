@@ -1,11 +1,7 @@
 Gingerbread Vendor Tree for DesireC (ERIS)
 
-WARNING!  PLEASE DELETE THE "RECOVERY" FOLDER FROM THE ROM AFTER BUILD, BEFORE FLASHING OR DISTRO... thank you.
-If anyone can help me keep recovery from being added to the rom, please msg me!
-
-NOTE:  If you're going to use this as a standalone, please take the 'vendor' folder out of the tree
-and drop it into the root of your build, overwriting any files.  If you don't do this, you won't
-have any make options or 'product file' for DesireC (ERIS) and won't be able to build.
+NOTE:  Please cut the 'vendor' folder out of the tree and drop it into the root of your build, overwriting any files.
+If you don't do this, you won't be able to build.
 
 So to clearify...
 
@@ -24,9 +20,9 @@ Basic steps to build:
         d) Copy files from 'device/htc/desirec/proprietary' directory (also needs 'setup-makefiles.sh')
 5 - Setup build environment by sourcing envsetup file '. build/envsetup.sh'
 6 - Run Lunch to select the build target 'lunch cyanogen_desirec-eng'
-7 - Build the system with 'make otapackage -j4'
+7 - Build the system with 'make -j6 bacon'
 
-NOTE: (the 4 is how many cpu cores you have + 1 ... I have a triple core for example)
+NOTE: (6 is however many cpu cores you have, I have a triple core with hyperthreading. Multiply by 2 if hyperthreading)
 
 Thanks to Conap & gnarlyc!
 
