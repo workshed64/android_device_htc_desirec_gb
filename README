@@ -20,9 +20,7 @@ Basic steps to build:
         d) Copy files from 'device/htc/desirec/proprietary' directory (also needs 'setup-makefiles.sh')
 5 - Setup build environment by sourcing envsetup file '. build/envsetup.sh'
 6 - Run Lunch to select the build target 'lunch cyanogen_desirec-eng'
-7 - Build the system with 'make -j6 bacon'
-
-NOTE: (6 is however many cpu cores you have, I have a triple core with hyperthreading. Multiply by 2 if hyperthreading)
+7 - Build the system with 'mka bacon'
 
 Thanks to Conap & gnarlyc!
 
