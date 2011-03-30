@@ -129,6 +129,6 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x01920000
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 #TARGET_RECOVERY_UI_LIB := librecovery_ui_desirec librecovery_ui_htc
-TARGET_PREBUILT_KERNEL := device/htc/desirec/prebuilt/modules/2.6.29-DecaFuctCFS/kernel
+TARGET_PREBUILT_KERNEL := device/htc/desirec/kernel
 
-PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=\$(TOP)/device/htc/desirec/prebuilt/prelink-linux-arm-desirec.map
+PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=\$(TOP)/device/htc/desirec/prelink-linux-arm-desirec.map
