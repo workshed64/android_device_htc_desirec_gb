@@ -11,12 +11,10 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
 # config.mk
 #
 # Product-specific compile-time definitions.
 #
-
 # WARNING: This line must come *before* including the proprietary
 # variant, so that it gets overwritten by the parent (which goes
 # against the traditional rules of inheritance).
@@ -32,7 +30,6 @@ TARGET_BOARD_PLATFORM_GPU := qcom
 
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
-TARGET_NO_RECOVERY := true
 
 TARGET_BOOTLOADER_BOARD_NAME := desirec
 TARGET_OTA_ASSERT_DEVICE := desirec
@@ -80,18 +77,11 @@ TARGET_HARDWARE_3D := false
 # OpenGL drivers config file path
 BOARD_EGL_CFG := device/htc/desirec/egl.cfg
 
-# No authoring clock for OpenCore
-# BOARD_NO_PV_AUTHORING_CLOCK := true
-
 BOARD_USE_HTC_LIBSENSORS := true
 BOARD_USE_desirec_LIBSENSORS := true
 
-# use old sensors HAL
-# TARGET_USES_OLD_LIBSENSORS_HAL := true
-
 BOARD_USES_QCOM_LIBS := true
 
-#TARGET_HAS_ANCIENT_MSMCAMERA := true
 BUILD_LIBCAMERA := true
 BOARD_CAMERA_LIBRARIES := libcameraservice libcamera
 
@@ -107,9 +97,6 @@ JS_ENGINE := v8
 
 # Stagefright fully enabled
 BUILD_WITH_FULL_STAGEFRIGHT := true
-
-# No fallback font by default (space savings)
-# NO_FALLBACK_FONT:=true
 
 TARGET_RELEASETOOLS_EXTENSIONS := device/htc/common
 
@@ -129,7 +116,6 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x01920000
 # The size of a block that can be marked bad.
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-#TARGET_RECOVERY_UI_LIB := librecovery_ui_desirec librecovery_ui_htc
 TARGET_PREBUILT_KERNEL := device/htc/desirec/kernel
 
 PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=\$(TOP)/device/htc/desirec/prelink-linux-arm-desirec.map
